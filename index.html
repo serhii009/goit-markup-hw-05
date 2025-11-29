@@ -29,52 +29,60 @@
 
   <body>
     <!-- ================= HEADER ================= -->
-     <header class="header">
-      <div class="container header-container">
-        <!-- Навігація -->
-         <nav class="header-navigation">
-          <a class="header-logo" href="./index.html">
-            Web<span class="header-logo-italik">Studio</span>
+    <header class="header">
+  <div class="container header-container">
+
+    <!-- Навігація -->
+    <nav class="header-navigation">
+      <a class="header-logo" href="./index.html">
+        Web<span class="header-logo-italik">Studio</span>
+      </a>
+
+      <!-- BURGER BUTTON — показывается только в мобильной версии -->
+      <button class="burger-button" id="menu-btn" aria-label="menu">
+
+        <!-- Иконка бургер -->
+        <svg id="burger-icon" class="icon-burger" width="24" height="24" 
+             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="6" x2="20" y2="6"/>
+          <line x1="4" y1="12" x2="20" y2="12"/>
+          <line x1="4" y1="18" x2="20" y2="18"/>
+        </svg>
+
+       
+
+      <ul class="header-menu-list">
+        <li class="header-menu-item">
+          <a class="header-menu-links current" href="./index.html">Studio</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-links" href="">Portfolio</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-links" href="">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Контакти -->
+    <address class="header-address">
+      <ul class="header-address-navigation">
+        <li class="header-adress-item">
+          <a class="header-address-links" href="mailto:info@devstudio.com">
+            info@devstudio.com
           </a>
+        </li>
+        <li class="header-adress-item">
+          <a class="header-address-links" href="tel:+110001111111">
+            +11 (000) 11-11-11
+          </a>
+        </li>
+      </ul>
+    </address>
 
-          <button class="burger-button" aria-label="menu">
-            <svg class="icon-burger" width="16" height="14">
-              <use href="./images/icons.svg#icon-burger" ></use>
-            </svg>
-          </button>
-
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a class="header-menu-links current" href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-links" href="">Portfolio</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-links" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Контакти -->
-        <address class="header-address">
-          <ul class="header-address-navigation">
-            <li class="header-adress-item">
-              <a class="header-address-links" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="header-adress-item">
-              <a class="header-address-links" href="tel:+110001111111"
-                >+11 (000) 11-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header> 
+  </div>
+</header>
 
       <!-- Overlay меню -->
  <div class="menu-overlay " id="menu-overlay">
